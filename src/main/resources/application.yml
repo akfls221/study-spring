@@ -2,6 +2,13 @@
 server:
   port: 8081
 
+my:
+  name: "엄태권"
+  age: 29
+  api:
+    country: "서울"
+    marriage: false
+
 spring:
   profiles:
     active: local
