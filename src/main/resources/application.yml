@@ -10,6 +10,19 @@ my:
     marriage: false
 
 spring:
+  output:
+    ansi:
+      enabled: always
+
+logging:
+  file:
+    name: study.log
+  level:
+    root: warn
+    org.springframework.web: DEBUG
+---
+
+spring:
   profiles:
     active: local
 
