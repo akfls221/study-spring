@@ -14,12 +14,12 @@ spring:
     ansi:
       enabled: always
 
-logging:
-  file:
-    name: study.log
-  level:
-    root: warn
-    org.springframework.web: DEBUG
+#logging:
+#  file:
+#    name: study.log
+#  level:
+#    root: warn
+#    org.springframework.web: DEBUG
 ---
 
 spring:
@@ -35,13 +35,8 @@ spring:
 spring:
   profiles:
     active: dev
-server:
-  port: ${random.int[8000, 9000]}
 
 ---
 spring:
   profiles:
     active: prod
-
-server:
-  port: 5000
